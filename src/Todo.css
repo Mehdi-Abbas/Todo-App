@@ -1,0 +1,185 @@
+.main{
+    /* position: absolute; */
+    left: 25%;
+    max-width: 50%;
+    border: 1px black solid;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 600px;
+    /* overflow: scroll; */
+    border: none;
+    /* min-width: 500px; */
+    
+}
+@media screen and (max-width: 800px) {
+    .main{
+        left: 0%;
+        max-width:100%;
+    }
+    
+}
+
+.main .todo .header {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 85%);
+    /* height: 100px; */
+    font-size: 6vw;
+    color: white;
+    font-style: italic;
+    padding: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main .todo .topBar{
+    display: flex;
+    padding: 20px;
+    
+    
+    
+}
+.main .todo .topBar ::placeholder {
+    font-style: italic;
+    color: rgb(177, 174, 174);
+  }
+
+
+
+.main .todo input{
+    width: 70%;
+    padding: 10px;
+    border-width: 0 0 2px 0;
+    font-size: 20px;
+    border-color: #03cffc;
+    text-decoration: none;
+    color: #575656;
+    
+    
+    
+}
+.main .todo input:focus{
+    outline: none;
+    
+}
+.main .todo button{
+    
+    padding: 10px;
+    font-size: 20px;
+    border-color: #03cffc;
+    text-decoration: none;
+    color: #03cffc;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    
+    
+}
+
+.main .todo button:hover{
+    
+    border-color: white;
+    border-width: 2px;
+    color: white;
+    background-color: #03cffc;
+    outline-color:#03cffc ;
+    outline-width: 2px;
+}
+
+.main .todo button:active{
+    background-color: #19a7c7;
+}
+
+.main .todo .incompleteList{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 2%;
+    width:85% ;
+    /* background-color: aqua; */
+    overflow:hidden;
+    text-align: left;
+    
+}
+.main .todo .incompleteList span{
+    width:70% ;
+    overflow:hidden;
+    text-align: left;
+    color: #575656;
+    font-family: "Calibri";
+    font-size: 20px;
+    margin-right: 5px;
+    
+}
+  .main .todo .incompleteList button{
+    padding: 3px;
+    font-size: 15px;
+    border-color: white;
+    text-decoration: none;
+    color: white;
+    background-color: #03cffc;
+    margin-left: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 30px;
+    
+    
+  }
+.main .todo .incompleteList button:hover{
+    margin-top: -3px;
+}
+.main .todo .incompleteList button:active{
+    background-color: #19a7c7;
+}
+/* ---------------------------------------------- */
+.main .todo .completeList{
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 2%;
+    width:85% ;
+    background-color: whitesmoke;
+    overflow:hidden;
+    text-align: left;
+    
+}
+.main .todo .completeList span{
+    width:90% ;
+    overflow:hidden;
+    text-align: left;
+    color: #808080;
+    font-family: "Calibri";
+    font-size: 18px;
+    margin-right: 5px;
+    font-style: italic;
+    text-decoration: line-through;
+    
+}
+  .main .todo .completeList button{
+    padding: 3px;
+    font-size: 15px;
+    border-color: white;
+    text-decoration: none;
+    color: white;
+    background-color: #9a9d9e;
+    margin-left: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    font-weight: 600;
+    height: 30px;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    
+    
+  }
+
+  
+  
